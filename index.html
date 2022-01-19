@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Public+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/dist/style.css">
   
   <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
 
@@ -16,19 +20,62 @@
 </head>
 <body>
 
-  Features
-  Pricing
-  Resources
+  <header class="header">
+    <div class="overlay has-fade">
+    <nav class="container  container--pall flex flex-jc-sb flex-ai-c">
+      <a href="/" class="header__logo">
+        <img src="images/logo.svg" alt="Shortly Logo"/>
+      </a>
 
-  Login
-  Sign Up
+      <a href="#" id="btnHamburger" class="header__hamburger hide-for-desktop">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
 
-  More than just shorter links
+      <div class="header__links">
+        <div class="hide-for-mobile">
+          <a href="#">Features</a>
+          <a href="#">Pricing</a>
+          <a href="#">Resources</a>
+        </div>
+        <div class="hide-for-mobile">
+          <a href="#">Login</a>
+        </div>
+      </div>
 
-  Build your brand’s recognition and get detailed insights 
-  on how your links are performing.
+      <div class="header__join hide-for-mobile">
+        <button type="button">Sign Up</button>
+      </div>
+    </nav>
 
-  Get Started
+    <div class="header__menu has-fade">
+      <a href="">Features</a>
+      <a href="">Prices</a>
+      <a href="">Resources</a>
+      <a href="">Login</a>
+      <button type="button">Sign Up</button>
+    </div>
+
+  </header>
+
+  <section class="hero container--pb container--pl">
+    <div class="container">
+      <div class="hero__image"></div>
+
+      <div class="hero__text">
+        <h1> More than just shorter links</h1>
+        <p>
+          Build your brand's recognition and get detailed insights 
+          on how your links are performing.
+        </p>
+        <button type="button">Get Started</button>
+      </div>
+    </div>
+  </section>
+
+
+  <!--
   
   Shorten a link here...
 
@@ -81,5 +128,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  -->
+  <script src="app/js/script.js"></script>
 </body>
 </html>
