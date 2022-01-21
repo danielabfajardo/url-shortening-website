@@ -1,31 +1,72 @@
 .hero {
-    //position: absolute;
-
-    @include breakpoint-up(large) {
-        display: flex;
-        align-items: center;
+    //border: 1px solid red;
+    .container {
+        @include breakpoint-up(large) {
+            display: flex;
+            align-items: center;
+        }
     }
 
     &__image {
-       // flex: 1;
-        order: 2;
-        //position: relative;
-        width: 100%;
-        height: 100%;
+        //border: 1px solid greenyellow;
+        position: relative;
         background-image: url('/images/illustration-working.svg');
         background-repeat: no-repeat;
+        min-height: 21.25rem;
+        width: 90%;
         background-size: cover;
-        background-position: center center;
-        min-height: 30.5rem;
+        background-position: 0% 0%;
+        left: 18%;
+
+        @include breakpoint-up(medium){
+            min-height: 35rem;
+            height: 100%;
+            width: 100%;
+            background-size: 80%;
+            background-position: center 30%;
+            left: 0%;
+        }
+      
+        @include breakpoint-up(large){
+            flex: 3;
+            order: 2;
+            min-height: 30.3125rem;
+            background-image: none;
+        }
+
+        &::before { 
+            @include breakpoint-up(large){
+              content: "";
+              position: absolute;
+              height: 100%;
+              background-image: url('/images/illustration-working.svg');        
+              background-repeat: no-repeat;
+              background-position: center bottom;
+              width: 110%;
+              background-size: 100%;
+              background-position: 0% 50%;
+              left: 10%;
+            }
+        }
 
     }
     &__text {
+        //border: 1px solid red;
+        align-self: center;
         text-align: center;
 
+        @include breakpoint-down(medium) {
+            padding: 2.5rem;
+        }
+
         @include breakpoint-up(large){
-          //flex: 2;
+          flex: 2.5;
           order: 1;
           text-align: left;
+        }
+        p {
+            //border: 1px solid greenyellow;
+            margin: 0px 0px 25px 0px;
         }
     }
 }

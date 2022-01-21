@@ -27,18 +27,73 @@ a, a:visited {
 }
 
 h1 {
-    font-size: 3rem;
+    //border: 1px solid peru;
     color: $veryDarkViolet;
+    font-size: 2.7rem;
+    margin: 0px;
+
+    @include breakpoint-up(large) {
+        font-size: 4rem;
+    }
 }
 
 p {
     line-height: 1.5;
-    margin-bottom: 2.25rem;
-  }
+    //margin-bottom: 2.25rem;
+}
 
 a:hover {
     color: $veryDarkViolet;
     transition: all 300ms ease-in-out;
+}
+
+.container {
+    max-width: 69.375rem;
+    margin: 0 auto;
+    &--pall {
+        padding-top: 4.375rem;
+        padding-right: 2.5rem;
+        padding-bottom: 4.375rem;
+        padding-left: 1rem;
+
+        @include breakpoint-up(large) {
+          padding-top: 2rem;
+          padding-bottom: 2rem;
+        }
+      }
+      &--py {
+        padding-top: 4.375rem;
+        padding-bottom: 4.375rem;
+    
+        @include breakpoint-up(large) {
+          padding-top: 2rem;
+          padding-bottom: 2rem;
+        }
+      }
+      &--px {
+        padding-right: 2.5rem;
+        padding-left: 1rem;
+      }
+      &--pt {
+        padding-top: 4.375rem;
+    
+        @include breakpoint-up(large) {
+          padding-top: 2rem;
+        }
+      }
+      &--pr {
+        padding-right: 2.5rem;
+      }
+      &--pb {
+        padding-bottom: 4.375rem;
+    
+        @include breakpoint-up(large) {
+          padding-bottom: 2rem;
+        }
+      }
+      &--pl {
+        padding-left: 1rem;
+      }
 }
 
 .flex {
@@ -52,31 +107,6 @@ a:hover {
     }
     &-ai-c {
         align-items: center;
-    }
-}
-
-.container {
-    max-width: 69.375rem;
-    margin: 0 auto;
-    //padding: 2.375rem 1.5rem;
-
-    &--py {
-        padding: 3.125rem 0px;
-    }
-    &--pall {
-        padding: 3.125rem 10.4375rem;
-    }
-    &--pl {
-        padding-left: 10.4375rem;
-    }
-    &--pr {
-        padding-right: 10.4375rem;
-    }
-    &--pb {
-        padding-bottom: 3.125rem;
-    }
-    &--pt {
-        padding-top: 3.125rem;
     }
 }
 

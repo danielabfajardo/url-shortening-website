@@ -1,53 +1,88 @@
 .header {
+    //position: relative;
     //border: 1px solid orchid;
-    z-index: 1;
+
+    &.open {
+        .header__hamburger {
+            > span:first-child {
+              transform: rotate(45deg);
+            } 
+            > span:nth-child(2) {
+              opacity: 0;
+            }
+            > span:last-child {
+              transform: rotate(-45deg);
+            }
+        }
+    }
+    nav {
+        position: relative;
+        padding-top: 1.0625rem;
+        padding-bottom: 1.0625rem;
+    }
     &__logo {
         //border: 1px solid purple;
         img {
             height: 32px;
 
             @include breakpoint-up(large) {
-                margin: 0px 2.8125rem -15px 0px;
+                margin: 0px 2.8125rem -0.9375rem 0rem;
             }
         }
     }
     &__hamburger {
+        //border: 1px solid red;
         > span {
             display: block;
             width: 24px;
             height: 3px;
             background-color: $grayishViolet;
             transition: all 300ms ease-in-out;
-            transform-origin: 3px 1px;
-
-            &:not(:last-child) {
-                margin-bottom: 6px;
-            }
+            transform-origin: 0% 50%;
+            margin-bottom: 6px;
         }
     }
     &__menu {
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
         position: absolute;
         width: 90%;
         background: $darkViolet;
         border-radius: 5px;
-        //padding: 2.8125rem;
-        //margin-top: 1.25rem;
+        padding: 2.8125rem;
         left: 50%;
         transform: translate(-50%);
-
+        font-size: 1.4rem;
+        font-weight: 700;
+        
         a {
-            display: block;
-            padding: 1.5rem;
+            padding: 1.1rem;
             color: white;
             text-align: center;
         }
+
+        .line {
+            border: 0.5px solid $grayishViolet;
+            margin: 1.1rem 0px;
+            opacity: 0.7;
+        }
+
+        button {
+            font-size: 1.4rem;
+            margin-top: 1.1rem;
+            padding: 1rem;
+        }
+       
     }
     &__links {
-        display: flex;
-        flex: 1;
-        justify-content: space-between;
-        align-self: center;
-        flex-wrap: wrap;
+        @include breakpoint-up(large) {
+            display: flex;
+            flex: 1;
+            justify-content: space-between;
+            align-self: center;
+            flex-wrap: wrap;
+        }
 
         a {
             font-size: $font-sm;
@@ -55,23 +90,6 @@
             margin-right: 2rem; 
         }
     }
-    &__join {
-
-    }
-
-    &.open {
-        .header__hamburger {
-          > span:first-child {
-            transform: rotate(45deg);
-          }
-          
-          > span:nth-child(2) {
-            opacity: 0;
-          }
-          
-          > span:last-child {
-            transform: rotate(-45deg);
-          }
-        }
-    }
 }
+
+

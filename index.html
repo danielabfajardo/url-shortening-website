@@ -15,22 +15,15 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution a { color: hsl(228, 13%, 60%); }
   </style>
 </head>
 <body>
 
   <header class="header">
-    <div class="overlay has-fade">
-    <nav class="container  container--pall flex flex-jc-sb flex-ai-c">
+    <nav class="container container--pall flex flex-jc-sb flex-ai-c">
       <a href="/" class="header__logo">
         <img src="images/logo.svg" alt="Shortly Logo"/>
-      </a>
-
-      <a href="#" id="btnHamburger" class="header__hamburger hide-for-desktop">
-        <span></span>
-        <span></span>
-        <span></span>
       </a>
 
       <div class="header__links">
@@ -44,26 +37,31 @@
         </div>
       </div>
 
-      <div class="header__join hide-for-mobile">
-        <button type="button">Sign Up</button>
-      </div>
+      <button type="button" class="hide-for-mobile">Sign Up</button>
+
+      <a href="#" id="btnHamburger" class="header__hamburger hide-for-desktop">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
     </nav>
 
-    <div class="header__menu has-fade">
+    <div class="header__menu has-fade hide-for-desktop">
       <a href="">Features</a>
-      <a href="">Prices</a>
+      <a href="">Pricing</a>
       <a href="">Resources</a>
+      <div class="line"></div>
       <a href="">Login</a>
       <button type="button">Sign Up</button>
     </div>
 
   </header>
 
-  <section class="hero container--pb container--pl">
+  <section class="hero">
     <div class="container">
       <div class="hero__image"></div>
 
-      <div class="hero__text">
+      <div class="hero__text container--pall">
         <h1> More than just shorter links</h1>
         <p>
           Build your brand's recognition and get detailed insights 
