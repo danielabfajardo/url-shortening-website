@@ -14,7 +14,7 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { background-color: rgb(22, 17, 27); padding: 15px; font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 13%, 60%); }
   </style>
 </head>
@@ -57,12 +57,12 @@
 
   </header>
 
-  <section class="hero">
+  <section class="hero container--pall">
     <div class="container">
       <div class="hero__image"></div>
 
       <div class="hero__text container--pall">
-        <h1> More than just shorter links</h1>
+        <h1>More than just shorter links</h1>
         <p>
           Build your brand's recognition and get detailed insights 
           on how your links are performing.
@@ -72,61 +72,126 @@
     </div>
   </section>
 
-
-  <!--
+  <section class="statistics">
+    <div class="shorten">
+      <div class="container container--px">
+        <form action="#" class="shorten__form">
+        <input type="text" placeholder="Shorten a link here..." class="shorten__text" required/>
+        <div class="button-bckg">
+          <input type="submit" value="Shorten It!" id="submit__url" class="button"/>
+        </div>
+      </form>
+      <div id="shorten__output"></div>
+      </div>
+    </div>
   
-  Shorten a link here...
+    <div class="container">
+      <div class="statistics__text container">
+        <h2 class="statistics__title">Advanced Statistics</h1>
+        <p>
+          Track how your links are performing across the web with our advanced statistics dashboard.
+        </p>
+      </div>
+      <div class="statistics__cards container--pall">
+        <div class="statistics__card">
+          <div class="statistics__card__img">
+            <img src="/images/icon-brand-recognition.svg" alt="Brand Recognition Icon"/>
+          </div>
+          <div class="card">
+            <div class="card__text">
+              <h3>Brand Recognition</h3>
+              <p>
+                Boost your brand recognition with each click. Generic links don’t 
+                mean a thing. Branded links help instil confidence in your content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="statistics__card">
+          <div class="statistics__card__img">
+            <img src="/images/icon-detailed-records.svg" alt="Detailed Records Icon"/>
+          </div>
+          <div class="card">
+            <div class="card__text">
+              <h3>Detailed Records</h3>
+              <p>
+                Gain insights into who is clicking your links. Knowing when and where 
+                people engage with your content helps inform better decisions.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="statistics__card">
+          <div class="statistics__card__img">
+            <img src="/images/icon-fully-customizable.svg" alt="Fully Customizable Icon"/>
+          </div>
+          <div class="card">
+            <div class="card__text">
+              <h3>Fully Customizable</h3>
+              <p>
+                Improve brand awareness and content discoverability through customizable 
+                links, supercharging audience engagement.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="statistics__line"></div>
+      </div>
+    </div>
+  </section>
 
-  Shorten It!
+  <section class="footer">
+    <div class="booster container--pall">
+      <h2>Boost your links today</h1>
+        <div class="booster__button-bckg">
+          <button type="button" class="button">Get Started</button>
+        </div>
+    </div>
+    <div class="links container container--pall">
+      <a href="/" class="links__logo">
+        <img src="images/logo.svg" alt="Shortly Logo"/>
+      </a>
+      <div class="links__options">
+        <h3>Features</h3>
+        <a href="">Link Shortening</a>
+        <a href="">Branded Links</a>
+        <a href="">Analytics</a>
+      </div>
+      <div class="links__options">
+        <h3>Resources</h3>
+        <a href="">Blog</a>
+        <a href="">Developers</a>
+        <a href="">Support</a>
+      </div>
+      <div class="links__options">
+        <h3>Company</h3>
+        <a href="">About</a>
+        <a href="">Our Team</a>
+        <a href="">Careers</a>
+        <a href="">Contact</a>
+      </div>
+      <div class="links__socials">
+        <a href="/" class="fb">
+          <img src="images/icon-facebook.svg" alt="Facebook"/>
+        </a>
+        <a href="/" class="tw">
+          <img src="images/icon-twitter.svg" alt="Twitter"/>
+        </a>
+        <a href="/" class="pinterest">
+          <img src="images/icon-pinterest.svg" alt="Pinterest"/>
+        </a>
+        <a href="/" class="ig">
+          <img src="images/icon-instagram.svg" alt="Instagram"/>
+        </a>
+      </div>
+    </div>
+  </section>
 
-  Advanced Statistics
-
-  Track how your links are performing across the web with our 
-  advanced statistics dashboard.
-
-  Brand Recognition
-
-  Boost your brand recognition with each click. Generic links don’t 
-  mean a thing. Branded links help instil confidence in your content.
-
-  Detailed Records
-
-  Gain insights into who is clicking your links. Knowing when and where 
-  people engage with your content helps inform better decisions.
-
-  Fully Customizable
-
-  Improve brand awareness and content discoverability through customizable 
-  links, supercharging audience engagement.
-
-  Boost your links today
-
-  Get Started
-
-  Features
-
-  Link Shortening
-  Branded Links
-  Analytics
-
-  Resources
-
-  Blog
-  Developers
-  Support
-
-  Company
-
-  About
-  Our Team
-  Careers
-  Contact
-  
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Daniela Fajardo</a>.
   </div>
-  -->
+
   <script src="app/js/script.js"></script>
 </body>
 </html>

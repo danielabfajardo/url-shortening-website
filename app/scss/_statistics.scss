@@ -1,0 +1,173 @@
+.statistics {
+    background-color: rgb(243, 241, 248);
+    //position: relative;
+    //border: 1px solid red;
+
+    .shorten {
+        //border: 1px solid red;
+ 
+        &__form {
+            //border: 1px solid red;
+            background-image: url('/images/bg-shorten-mobile.svg');
+            background-position: 60% 200%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 8px;
+            background-color: $darkViolet;
+
+            height: 9rem;
+            padding: 30px;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+
+            @include breakpoint-up(large) {
+                background-image: url('/images/bg-shorten-desktop.svg');
+                background-position: 0% 20%;
+                flex-direction: row;
+                gap: 20px;
+                transform: translateY(-50%);
+            }
+        }
+    
+        &__text {
+            font-family: inherit;
+            font-size: 15px;
+            border-radius: 8px;
+            width: 100%;
+            border: none;
+            padding: 0.75rem 1.25rem;
+            //margin: 10px 0px;
+
+            @include breakpoint-up(large) {
+                width: 75%;
+                padding: 1.2rem 1.25rem;
+            }
+        }
+        .button, .button-bckg { border-radius: 8px; }
+        .button {
+            height: 100%;
+            width: 100%;
+        }
+        .button-bckg {
+            //border: 1px solid red;
+            margin-top: 10px;
+            background-color: white;
+            width: 100%;
+
+            @include breakpoint-up(large) {
+                width: 15%;
+                height: 72.5%;
+                margin-top: 0px;
+            }
+        }
+    }
+    &__text {
+        //border: 1px solid red;
+        text-align: center;
+        width: 80%;
+
+        @include breakpoint-up(large) {
+            width: 55%;
+            margin-bottom: 3.125rem;
+        }
+    }
+    &__cards {
+        //border: 1px solid red;
+        //padding-bottom: 8rem;
+        padding-top: 0rem;
+
+        @include breakpoint-up(large) {
+            display: flex;
+            flex-direction: row;
+            padding-bottom: 8rem;
+            padding-top: 2.5rem;
+            gap: 35px;
+        }
+    }
+    &__card {
+        //border: 1px solid red;
+        z-index: 1;
+        position: relative;
+        text-align: center;
+
+        &:not(:last-child){
+            margin-bottom: 1rem;
+        }
+
+        @include breakpoint-up(large) {
+            text-align: left;
+
+            &:not(:last-child){
+                margin-bottom: 0rem;
+            }
+
+            &:nth-child(2) {
+                transform: translateY(15%);
+            }
+
+            &:nth-child(3) {
+                transform: translateY(30%);
+            }
+        }
+    }
+    .card {
+        //border: 1px solid red;
+        background-color: white;
+        padding: 3.5rem 2rem 1rem 2rem;
+        border-radius: 10px;
+        
+        &__text {
+            p {
+                font-size: $font-sm;
+            }
+        }
+    }
+    &__card__img {
+        //border: 1px solid red;
+        background-color: $darkViolet;
+        width: 30%;
+        border-radius: 50%;
+        padding: 1.7rem;
+        text-align: center;
+        transform: translateY(50%);
+        margin: 0 auto;
+        
+        img {
+            //border: 6px solid red;
+            width: 100%;
+        }
+
+        @include breakpoint-up(medium) {
+            padding: 1rem;
+            width: 11%;           
+        }
+
+        @include breakpoint-up(large) {
+            position: absolute;
+            padding: 1rem;
+            width: 23%;           
+            transform: translate(40%, -50%);
+        }
+    }
+    &__line {
+        //border: 1px solid red;
+        height: 100%;
+        position: absolute;
+        border-left: 10px solid $cyan;
+        left: 49.5%;
+        transform: translateY(-55rem);
+
+        @include breakpoint-up(large) {
+            border-left: none;
+            height: 15px;
+            width: 60%;
+            left: 15%;
+            background-color: $cyan;
+            transform: translate(0, 9rem);
+        }
+    }
+}

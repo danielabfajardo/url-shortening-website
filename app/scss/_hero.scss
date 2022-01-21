@@ -1,9 +1,14 @@
 .hero {
     //border: 1px solid red;
+    
+    @include breakpoint-down(medium) {
+        padding: 0px;
+    }
+
     .container {
         @include breakpoint-up(large) {
             display: flex;
-            align-items: center;
+            align-items: flex-start;
         }
     }
 
@@ -13,18 +18,26 @@
         background-image: url('/images/illustration-working.svg');
         background-repeat: no-repeat;
         min-height: 21.25rem;
-        width: 90%;
+        width: 110%;
         background-size: cover;
-        background-position: 0% 0%;
-        left: 18%;
+        background-position: center left;
+        left: 7%;
 
         @include breakpoint-up(medium){
-            min-height: 35rem;
+            //border: 1px solid greenyellow;
+            min-height: 30.3125rem;
             height: 100%;
-            width: 100%;
+            width: 90%;
             background-size: 80%;
-            background-position: center 30%;
-            left: 0%;
+            background-position: 50% 20%;
+            //left: 0%;
+            //margin-bottom: 2.5rem;
+            //background-position: center bottom;
+            //width: 70%;
+            //background-size: 100%;
+            //background-position: 0% 0%;
+            //left: 50%;
+            //transform: translate(-50%);
         }
       
         @include breakpoint-up(large){
@@ -32,6 +45,7 @@
             order: 2;
             min-height: 30.3125rem;
             background-image: none;
+            margin-bottom: 4rem;
         }
 
         &::before { 
@@ -42,10 +56,10 @@
               background-image: url('/images/illustration-working.svg');        
               background-repeat: no-repeat;
               background-position: center bottom;
-              width: 110%;
+              width: 130%;
               background-size: 100%;
               background-position: 0% 50%;
-              left: 10%;
+              left: -10%;
             }
         }
 
@@ -56,17 +70,30 @@
         text-align: center;
 
         @include breakpoint-down(medium) {
-            padding: 2.5rem;
+            //padding: 2.5rem;
         }
 
         @include breakpoint-up(large){
-          flex: 2.5;
+          flex: 3;
           order: 1;
           text-align: left;
         }
         p {
             //border: 1px solid greenyellow;
-            margin: 0px 0px 25px 0px;
+            @include breakpoint-up(large){
+                margin: 0px 0px 35px 0px;
+            }
+        }
+        button {
+            height: 55px;
+            width: 60%;
+            margin: 0.9375rem 0px 6rem 0px;
+
+            @include breakpoint-up(large) {
+                height: 50px;
+                width: 40%;
+                margin: 0px;
+            }
         }
     }
 }
