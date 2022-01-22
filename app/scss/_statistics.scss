@@ -1,13 +1,7 @@
 .statistics {
     background-color: rgb(243, 241, 248);
-    //position: relative;
-    //border: 1px solid red;
-
     .shorten {
-        //border: 1px solid red;
- 
         &__form {
-            //border: 1px solid red;
             background-image: url('/images/bg-shorten-mobile.svg');
             background-position: 60% 200%;
             background-size: cover;
@@ -53,7 +47,6 @@
             width: 100%;
         }
         .button-bckg {
-            //border: 1px solid red;
             margin-top: 10px;
             background-color: white;
             width: 100%;
@@ -66,7 +59,6 @@
         }
     }
     &__text {
-        //border: 1px solid red;
         text-align: center;
         width: 80%;
 
@@ -76,8 +68,6 @@
         }
     }
     &__cards {
-        //border: 1px solid red;
-        //padding-bottom: 8rem;
         padding-top: 0rem;
 
         @include breakpoint-up(large) {
@@ -89,7 +79,6 @@
         }
     }
     &__card {
-        //border: 1px solid red;
         z-index: 1;
         position: relative;
         text-align: center;
@@ -115,7 +104,6 @@
         }
     }
     .card {
-        //border: 1px solid red;
         background-color: white;
         padding: 3.5rem 2rem 1rem 2rem;
         border-radius: 10px;
@@ -127,7 +115,6 @@
         }
     }
     &__card__img {
-        //border: 1px solid red;
         background-color: $darkViolet;
         width: 30%;
         border-radius: 50%;
@@ -137,7 +124,6 @@
         margin: 0 auto;
         
         img {
-            //border: 6px solid red;
             width: 100%;
         }
 
@@ -154,7 +140,6 @@
         }
     }
     &__line {
-        //border: 1px solid red;
         height: 100%;
         position: absolute;
         border-left: 10px solid $cyan;

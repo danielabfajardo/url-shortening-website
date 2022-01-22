@@ -412,11 +412,10 @@ button:hover, .button:hover {
 
 @media (min-width: 40em) {
   .hero__image {
-    min-height: 30.3125rem;
+    min-height: 35.3125rem;
+    width: 100%;
     height: 100%;
-    width: 90%;
-    background-size: 100%;
-    background-position: 50% 20%;
+    background-position: 0% 0%;
   }
 }
 
