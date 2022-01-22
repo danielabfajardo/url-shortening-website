@@ -836,6 +836,12 @@ button:hover, .button:hover {
   color: white;
 }
 
+@media (max-width: 63.9375em) {
+  .footer .links h3 {
+    padding-top: 2rem;
+  }
+}
+
 .footer .attribution {
   background-color: #16111b;
   padding: 1rem;

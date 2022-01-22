@@ -96,6 +96,10 @@
         }
         h3 {
             color: white;
+
+            @include breakpoint-down(medium) {
+                padding-top: 2rem;
+            }
         }
     }
     .attribution {
