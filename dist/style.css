@@ -598,7 +598,7 @@ button:hover, .button:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    padding-bottom: 8rem;
+    padding-bottom: 12rem;
     padding-top: 2.5rem;
     gap: 35px;
   }
