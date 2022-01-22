@@ -24,20 +24,11 @@
         left: 7%;
 
         @include breakpoint-up(medium){
-            //border: 1px solid greenyellow;
             min-height: 30.3125rem;
             height: 100%;
             width: 90%;
-            background-size: 80%;
+            background-size: 100%;
             background-position: 50% 20%;
-            //left: 0%;
-            //margin-bottom: 2.5rem;
-            //background-position: center bottom;
-            //width: 70%;
-            //background-size: 100%;
-            //background-position: 0% 0%;
-            //left: 50%;
-            //transform: translate(-50%);
         }
       
         @include breakpoint-up(large){

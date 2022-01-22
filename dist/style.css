@@ -415,7 +415,7 @@ button:hover, .button:hover {
     min-height: 30.3125rem;
     height: 100%;
     width: 90%;
-    background-size: 80%;
+    background-size: 100%;
     background-position: 50% 20%;
   }
 }
@@ -697,12 +697,11 @@ button:hover, .button:hover {
 
 .footer {
   background-color: #232127;
-  padding-bottom: 5rem;
 }
 
 .footer .booster {
   background-color: #3b3054;
-  background-image: url("/images/logo.svg");
+  background-image: url("/images/bg-boost-mobile.svg");
   background-position: center right;
   background-repeat: no-repeat;
   background-size: cover;
@@ -747,6 +746,7 @@ button:hover, .button:hover {
 
 .footer .links {
   text-align: center;
+  padding-bottom: 2.5rem;
 }
 
 @media (min-width: 64em) {
@@ -765,23 +765,30 @@ button:hover, .button:hover {
   color: #2acfcf;
 }
 
+.footer .links__logo {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
 .footer .links__logo img {
   width: 55%;
   height: 55%;
   margin-bottom: 0.5rem;
-  -webkit-filter: invert(20%) sepia(0%) saturate(10%) hue-rotate(30deg) brightness(100%) contrast(20%);
-          filter: invert(20%) sepia(0%) saturate(10%) hue-rotate(30deg) brightness(100%) contrast(20%);
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+}
+
+@media (min-width: 40em) {
+  .footer .links__logo img {
+    width: 25%;
+  }
 }
 
 @media (min-width: 64em) {
-  .footer .links__logo {
-    -webkit-box-flex: 2;
-        -ms-flex: 2;
-            flex: 2;
-  }
   .footer .links__logo img {
-    width: 40%;
-    height: 40%;
+    width: 45%;
+    height: 45%;
     margin-bottom: 0rem;
   }
 }
@@ -814,17 +821,33 @@ button:hover, .button:hover {
           justify-content: center;
 }
 
+.footer .links__socials a img:hover {
+  -webkit-filter: invert(0%) sepia(200%) saturate(3000%) hue-rotate(125deg) brightness(100%) contrast(70%);
+          filter: invert(0%) sepia(200%) saturate(3000%) hue-rotate(125deg) brightness(100%) contrast(70%);
+}
+
 @media (min-width: 64em) {
   .footer .links__socials {
     margin-top: 1.5rem;
-  }
-  .footer .links__socials a img:hover {
-    -webkit-filter: invert(0%) sepia(80%) saturate(3000%) hue-rotate(165deg) brightness(80%) contrast(80%);
-            filter: invert(0%) sepia(80%) saturate(3000%) hue-rotate(165deg) brightness(80%) contrast(80%);
   }
 }
 
 .footer .links h3 {
   color: white;
+}
+
+.footer .attribution {
+  background-color: #16111b;
+  padding: 1rem;
+  font-size: 0.8125rem;
+  text-align: center;
+}
+
+.footer .attribution a {
+  color: #8c91a6;
+}
+
+.footer .attribution a:hover {
+  color: #2acfcf;
 }
 /*# sourceMappingURL=style.css.map */
