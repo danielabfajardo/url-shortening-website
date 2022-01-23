@@ -181,13 +181,12 @@ button, .button {
   transition: opacity 300ms ease-in-out;
 }
 
-button:hover, .button:hover {
-  opacity: 0.7;
-}
-
 @media (min-width: 64em) {
   button, .button {
     font-size: 1rem;
+  }
+  button:hover, .button:hover {
+    opacity: 0.7;
   }
 }
 
@@ -611,14 +610,9 @@ button:hover, .button:hover {
 }
 
 .statistics .shorten .button-bckg {
-  background-color: white;
-  border-radius: 8px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
   margin-top: 10px;
-  height: 2.8rem;
   width: 100%;
+  height: 2.8rem;
 }
 
 .statistics .shorten .button-bckg .submit__btn {
@@ -628,6 +622,10 @@ button:hover, .button:hover {
 
 @media (min-width: 64em) {
   .statistics .shorten .button-bckg {
+    background-color: white;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     height: 3.8rem;
     margin-top: 0px;
   }
