@@ -79,6 +79,8 @@
                 width: 100%;
             }
 
+            .button {border-radius: 0px;}
+
             @include breakpoint-up(large) {
                 background-color: white;
                 flex: 1;

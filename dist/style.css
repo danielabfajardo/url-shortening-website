@@ -620,6 +620,10 @@ button, .button {
   width: 100%;
 }
 
+.statistics .shorten .button-bckg .button {
+  border-radius: 0px;
+}
+
 @media (min-width: 64em) {
   .statistics .shorten .button-bckg {
     background-color: white;
