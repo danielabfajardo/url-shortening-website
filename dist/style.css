@@ -168,7 +168,7 @@ a:hover {
           align-items: center;
 }
 
-button {
+button, .button {
   padding: 10px 22px;
   border-radius: 50px;
   border: 0;
@@ -181,12 +181,12 @@ button {
   transition: opacity 300ms ease-in-out;
 }
 
-button:hover {
+button:hover, .button:hover {
   opacity: 0.7;
 }
 
 @media (min-width: 64em) {
-  button {
+  button, .button {
     font-size: 1rem;
   }
 }
@@ -624,29 +624,6 @@ button:hover {
 .statistics .shorten .button-bckg .submit__btn {
   height: 100%;
   width: 100%;
-}
-
-.statistics .shorten .button-bckg .button {
-  padding: 10px 22px;
-  border-radius: 8px;
-  border: 0;
-  background-color: #2acfcf;
-  color: white;
-  font-size: 1.125rem;
-  font-weight: 700;
-  cursor: pointer;
-  -webkit-transition: opacity 300ms ease-in-out;
-  transition: opacity 300ms ease-in-out;
-}
-
-.statistics .shorten .button-bckg .button:hover {
-  opacity: 0.7;
-}
-
-@media (min-width: 64em) {
-  .statistics .shorten .button-bckg .button {
-    font-size: 1rem;
-  }
 }
 
 @media (min-width: 64em) {

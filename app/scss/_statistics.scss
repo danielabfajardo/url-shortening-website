@@ -82,26 +82,6 @@
                 width: 100%;
             }
 
-            .button {
-                padding: 10px 22px;
-                border-radius: 8px;
-                border: 0;
-                background-color: $cyan;
-                color: white;
-                font-size: $font-med;
-                font-weight: 700;
-                cursor: pointer;
-                transition: opacity 300ms ease-in-out;
-            
-                &:hover {
-                    opacity: 0.7;
-                }
-            
-                @include breakpoint-up(large) {
-                    font-size: $font-sm;
-                }
-            }
-
             @include breakpoint-up(large) {
                 height: 3.8rem;
                 margin-top: 0px;
