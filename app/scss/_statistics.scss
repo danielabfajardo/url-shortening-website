@@ -79,7 +79,7 @@
                 width: 100%;
             }
 
-            .button {border-radius: 0px;}
+            .button { border-radius: 8px !important; }
 
             @include breakpoint-up(large) {
                 background-color: white;

@@ -621,7 +621,7 @@ button, .button {
 }
 
 .statistics .shorten .button-bckg .button {
-  border-radius: 0px;
+  border-radius: 8px !important;
 }
 
 @media (min-width: 64em) {
