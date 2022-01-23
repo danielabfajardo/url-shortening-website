@@ -624,7 +624,10 @@ button:hover, .button:hover {
 .statistics .shorten .button-bckg .submit__btn {
   height: 100%;
   width: 100%;
-  border-radius: 0px;
+}
+
+.statistics .shorten .button-bckg .button {
+  border-radius: 8px;
 }
 
 @media (min-width: 64em) {
