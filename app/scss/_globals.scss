@@ -21,6 +21,11 @@ body {
     }
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 a, a:visited {
     text-decoration: none;
     color: $grayishViolet;
