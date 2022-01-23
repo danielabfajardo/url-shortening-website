@@ -36,7 +36,7 @@ class URLShortener {
             if(inputURL === "") {
                 errorLabel.innerHTML = "Please add a new link";
             } else {
-                errorLabel.innerHTML = "Not a valid link. Please try again";
+                errorLabel.innerHTML = "Error: Make sure you add 'http(s)//:'";
             }
         } else if(inputURL!== ""){
             if(this.#flag === 1){
