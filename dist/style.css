@@ -621,6 +621,7 @@ button:hover, .button:hover {
 }
 
 .statistics .shorten .button-bckg .submit__btn {
+  border-radius: 8px;
   height: 100%;
   width: 100%;
 }
