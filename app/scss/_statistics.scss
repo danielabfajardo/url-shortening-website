@@ -83,7 +83,8 @@
             }
 
             .button {
-                border-radius: 8px;
+                border-radius: 0px;
+                background-color: yellow;
             }
 
             @include breakpoint-up(large) {

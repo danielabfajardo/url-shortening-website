@@ -627,7 +627,8 @@ button:hover, .button:hover {
 }
 
 .statistics .shorten .button-bckg .button {
-  border-radius: 8px;
+  border-radius: 0px;
+  background-color: yellow;
 }
 
 @media (min-width: 64em) {
