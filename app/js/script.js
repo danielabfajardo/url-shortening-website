@@ -63,7 +63,7 @@ class URLShortener {
           </div>
           <div class="line hide-for-desktop"></div>
           <div class="output__link">
-            <p>${shortenUrl}</p>
+            <p class="final__link">${shortenUrl}</p>
             <button type="button" class="button copy-btn">Copy</button>
           </div>
         </div>`;
@@ -74,7 +74,7 @@ class URLShortener {
     copyText(e){
         if(!e.target.classList.contains("copy-btn")) return;
 
-        const text = e.target.closest(".shorten__output-box").querySelector(".output__link").innerText;
+        const text = e.target.closest(".shorten__output-box").querySelector(".output__link").querySelector(".final__link").innerText;
         
         const inputElement = document.createElement('input');
         inputElement.setAttribute("value", text);
@@ -82,6 +82,7 @@ class URLShortener {
         inputElement.select();
         document.execCommand("copy");
         inputElement.parentNode.removeChild(inputElement);
+        inputElement.value = "";
 
         e.target.innerHTML = "Copied!";
         e.target.style.backgroundColor = "hsl(257, 27%, 26%)";
