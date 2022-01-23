@@ -70,12 +70,26 @@
     <div class="shorten">
       <div class="container container--px">
         <form action="#" class="shorten__form">
-        <input type="text" placeholder="Shorten a link here..." class="shorten__text" required/>
-        <div class="button-bckg">
-          <input type="submit" value="Shorten It!" id="submit__url" class="button"/>
+          <input type="text" placeholder="Shorten a link here..." class="shorten__text"/>
+          <label class="shorten__label" for="shorten__text"></label>
+          <div class="button-bckg">
+            <input type="submit" value="Shorten It!" id="submit__url" class="button submit__btn"/>
+          </div>
+        </form>
+      <div class="shorten__output">
+        <!--
+        <div class="shorten__output-box">
+          <div class="input__link">
+            <p></p>
+          </div>
+          <div class="line hide-for-desktop"></div>
+          <div class="output__link">
+            <p></p>
+            <button type="button" class="button copy-btn"></button>
+          </div>
         </div>
-      </form>
-      <div id="shorten__output"></div>
+        -->
+      </div>
       </div>
     </div>
   
@@ -184,7 +198,7 @@
       Coded by <a href="https://github.com/danielabfajardo" target=”_blank”>danielabfajardo</a>.
     </div>
   </section>
-
+  <script src="app/js/toggle.js"></script>
   <script src="app/js/script.js"></script>
 </body>
 </html>

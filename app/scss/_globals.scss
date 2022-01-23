@@ -151,6 +151,12 @@ button, .button {
     }
 }
 
+.line {
+    border: 0.5px solid $grayishViolet;
+    margin: 1.1rem 0px;
+    opacity: 0.7;
+}
+
 .hide-for-mobile {
     @include breakpoint-down(medium) {
         display: none;
